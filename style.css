@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  gap: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: #251819;
+}
+
+button {
+  outline: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding-block: 25px;
+  margin-bottom: 85px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(252, 251, 251);
+  display: none;
+
+  ul {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  i {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: larger;
+  }
+}
+
+.display-flex {
+  display: block;
+}
+
+.hny {
+  flex-direction: column;
+  gap: 55px;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    margin-block: 15px;
+  }
+
+  button {
+    background-color: #dc3845;
+    color: white;
+    border-radius: 35px;
+    border: none;
+    padding: 20px 45px;
+    font-size: 16px;
+  }
+}
+
+#section2 {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  h3 {
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .celebrates {
+    text-align: center;
+  }
+}
+
+#section3 {
+  align-items: center;
+
+  .celebratePart {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  button {
+    width: 250px;
+    background-color: #dc3845;
+    color: white;
+    border-radius: 35px;
+    border: none;
+    padding: 20px 45px;
+    font-size: 16px;
+  }
+}
+
+#section4 {
+  position: relative;
+  z-index: -8;
+  margin-top: 80px;
+  margin-bottom: 130px;
+  margin-inline: auto;
+  .gift {
+    box-shadow: 1px 1px 10px 1px rgb(233, 232, 232);
+    border-radius: 10px;
+    width: 210px;
+    text-align: center;
+
+    .gift-info {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    p:nth-child(1) {
+      font-size: 18px;
+    }
+
+    p:nth-child(2) {
+      font-size: 14px;
+    }
+
+    img {
+      margin-top: 35px;
+    }
+  }
+
+  .gift-container {
+    width: 45%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(2, 240px);
+    gap: 35px;
+    margin-top: 55px;
+  }
+}
+
+#section5 {
+  position: relative;
+  z-index: -8;
+  margin-bottom: 150px;
+
+  .img-bg {
+    background-color: #dc3845;
+    padding: 15px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .new-gift-container {
+    margin-top: 70px;
+    width: 55%;
+    gap: 55px;
+  }
+
+  .new-gift-info {
+    margin-top: 20px;
+
+    p:nth-child(2) {
+      margin-top: 8px;
+    }
+  }
+
+  .new-gift {
+    box-shadow: 1px 1px 10px 1px rgb(233, 232, 232);
+    padding: 0;
+    height: 260px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .new-gift-fav {
+    position: absolute;
+    background-color: #dc3845;
+    right: 7px;
+    bottom: -18px;
+    padding: 2px 5.5px;
+    border-radius: 50%;
+  }
+}
+
+#section6 {
+  position: relative;
+  z-index: -8;
+  margin-bottom: 100px;
+  .wishes-card {
+    background-color: #dc3845;
+    border-radius: 30px;
+    padding: 60px 60px;
+  }
+
+  h4 {
+    font-size: 36px;
+    color: white;
+  }
+
+  input {
+    padding-left: 20px;
+    border-radius: 40px;
+    border: none;
+    height: 50px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 12px;
+  }
+}
+
+footer {
+  position: relative;
+  z-index: -8;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  h3 {
+    margin-bottom: 25px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+    color: #5d5656;
+  }
+}
+
+.bg {
+  background-color: #251819;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #section1 {
+    margin-bottom: -40px;
+
+    .hny {
+      button {
+        margin-top: -150px;
+      }
+    }
+
+    .pages {
+      display: none;
+    }
+
+    .home {
+      flex-direction: column;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+
+    .side-bar {
+      i {
+        font-size: medium;
+      }
+    }
+  }
+
+  #section2 {
+    h3 {
+      width: 300px;
+      margin-inline: auto;
+    }
+
+    .surprise-gifts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+
+  #section3 {
+    flex-direction: column;
+
+    button {
+      margin-inline: auto;
+    }
+
+    .celebratePart {
+      text-align: center;
+
+      .buttton {
+        margin-inline: auto;
+      }
+    }
+  }
+
+  #section4 {
+    .gift-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 25px;
+      margin-inline: auto;
+      justify-content: center;
+      /* padding-left: 50px;
+      padding-right: 50px; */
+    }
+
+    .gift {
+      width: 160px;
+      padding-bottom: 15px;
+    }
+  }
+
+  #section5 {
+    .new-gift-container {
+      flex-direction: column;
+    }
+
+    .new-gift-container {
+      width: 65%;
+    }
+
+    .new-gift {
+      height: 270px;
+    }
+
+    .new-gift-fav {
+      bottom: -25px;
+      right: 10px;
+    }
+  }
+
+  #section6 {
+    h4 {
+      width: 100%;
+      margin-right: 130px;
+    }
+
+    .wishes-card {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    input,
+    button {
+      width: 90%;
+      margin-left: -25px;
+    }
+  }
+
+  #section7 {
+    flex-direction: column;
+    gap: 25px;
+
+    .green-ball {
+      display: flex;
+      position: relative;
+
+      p {
+        display: inline;
+        padding: 0;
+        /* width: 50%; */
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
